@@ -199,66 +199,66 @@ str2 = 'Days'
 str3 = 'Of'
 str4 = 'Python'
 result = str1 + ' ' + str2 + ' ' + str3 + ' ' + str4
-print(result)  # Output: Thirty Days Of Python
+print(result)  
 
 # Concatenate more strings
 str5 = 'Coding'
 str6 = 'For'
 str7 = 'All'
 result2 = str5 + ' ' + str6 + ' ' + str7
-print(result2)  # Output: Coding For All
+print(result2)  
 
 # Declare and assign variable
 company = "Coding For All"
 
 # Print the variable
-print(company)  # Output: Coding For All
+print(company) 
 
 # Print the length of the company string
-print(len(company))  # Output: Length of the string
+print(len(company))  
 
 # Change to uppercase
-print(company.upper())  # Output: CODING FOR ALL
+print(company.upper())  
 
 # Change to lowercase
-print(company.lower())  # Output: coding for all
+print(company.lower())  
 
 # Use capitalize(), title(), swapcase() methods
-print(company.capitalize())  # Output: Coding for all
-print(company.title())       # Output: Coding For All
-print(company.swapcase())    # Output: cODING fOR aLL
+print(company.capitalize()) 
+print(company.title())       
+print(company.swapcase())    
 
 # Slicing out the first word
 first_word = company.split()[0]
-print(first_word)  # Output: Coding
+print(first_word)  
 
 # Checking if contains 'Coding'
-print(company.index('Coding'))  # Output: Index of 'Coding'
-print(company.find('Coding'))   # Output: Index of 'Coding'
+print(company.index('Coding'))  
+print(company.find('Coding'))  
 
 # Replacing 'Coding' with 'Python'
 new_company = company.replace('Coding', 'Python')
-print(new_company)  # Output: Python For All
+print(new_company)  
 
 # Replacing 'Python for Everyone' with 'Python for All'
 phrase = "Python for Everyone"
 new_phrase = phrase.replace('Everyone', 'All')
-print(new_phrase)  # Output: Python for All
+print(new_phrase) 
 # Spliting using space as the separator
-print(company.split())  # Output: ['Coding', 'For', 'All']
+print(company.split()) 
 
 # Spliting at the comma
 tech_companies = "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon"
-print(tech_companies.split(', '))  # Output: List of company names
+print(tech_companies.split(', '))  
 
 # Character at index 0
-print(company[0])  # Output: C
+print(company[0])  
 
 # Last index of the string
-print(company[-1])  # Output: l
+print(company[-1]) 
 
 # Character at index 10
-print(company[10])  # Output: ' ' (space)
+print(company[10])  
 
 # Creating an acronym
 def create_acronym(phrase):
@@ -266,52 +266,52 @@ def create_acronym(phrase):
     acronym = ''.join([word[0].upper() for word in words])
     return acronym
 
-print(create_acronym('Python For Everyone'))  # Output: PFE
+print(create_acronym('Python For Everyone'))  
 
 # Acronym for 'Coding For All'
-print(create_acronym('Coding For All'))  # Output: CFA
+print(create_acronym('Coding For All'))  
 
 # First occurrence of 'C'
-print(company.index('C'))  # Output: 0
+print(company.index('C'))  
 
 # First occurrence of 'F'
-print(company.index('F'))  # Output: 7
+print(company.index('F'))  
 
 # Last occurrence of 'l'
 company = "Coding For All People"
-print(company.rfind('l'))  # Output: 19
+print(company.rfind('l'))  
 
 # First occurrence of 'because'
 sentence = 'You cannot end a sentence with because because because is a conjunction'
-print(sentence.index('because'))  # Output: Position of first 'because'
+print(sentence.index('because'))  
 
 # Last occurrence of 'because'
-print(sentence.rindex('because'))  # Output: Position of last 'because'
+print(sentence.rindex('because'))  
 
 # Slicing out 'because because because'
 start = sentence.find('because')
 end = sentence.rindex('because') + len('because')
 sliced_phrase = sentence[start:end]
-print(sliced_phrase)  # Output: because because because
+print(sliced_phrase)  
 
 # Does 'Coding For All' Start with 'Coding'?
-print(company.startswith('Coding'))  # Output: True
+print(company.startswith('Coding'))  
 
 # Does 'Coding For All' End with 'coding'?
-print(company.endswith('coding'))  # Output: False
+print(company.endswith('coding'))  
 
 # Removing trailing spaces
 trimmed_company = '   Coding For All      '.strip()
-print(trimmed_company)  # Output: Coding For All
+print(trimmed_company)  
 
 # Checking isidentifier()
 print('30DaysOfPython'.isidentifier())  # Output: False
-print('thirty_days_of_python'.isidentifier())  # Output: True
+print('thirty_days_of_python'.isidentifier())  
 
 # Joining  list with hash and space
 libraries = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
 joined_libraries = ' # '.join(libraries)
-print(joined_libraries)  # Output: Django # Flask # Bottle # Pyramid # Falcon
+print(joined_libraries)  
 
 # using the New line escape sequence
 print("I am enjoying this challenge.\nI just wonder what is next.")
