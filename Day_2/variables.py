@@ -69,6 +69,291 @@ print(first_name, last_name, country, age)
 # To check for python reserved words or keywords
 help('keywords')
 
+# Exercise MODULE 3 
+age = 28 # declaring age as an interger variable 
+height = 7.5 # declaring height as a float variable
+complex_number = # declaring a variable that stores a complex number 
+
+# Script to calculate area of a triangle
+base = float(input("Enter base: "))
+height = float(input("Enter height: "))
+area = 0.5 * base * height
+print("The area of the triangle is", area)
+
+# Script to calculate perimeter of a triangle
+a = float(input("Enter side a: "))
+b = float(input("Enter side b: "))
+c = float(input("Enter side c: "))
+perimeter = a + b + c
+print("The perimeter of the triangle is", perimeter)
+
+# Script to calculate area and perimeter of a rectangle
+length = float(input("Enter the length: "))
+width = float(input("Enter the width: "))
+area = length * width
+perimeter = 2 * (length + width)
+print("The area of the rectangle is", area)
+print("The perimeter of the rectangle is", perimeter)
+
+# Script to calculate area and circumference of a circle
+import math
+
+radius = float(input("Enter the radius: "))
+pi = 3.14
+area = pi * (radius ** 2)
+circumference = 2 * pi * radius
+print("The area of the circle is", area)
+print("The circumference of the circle is", circumference)
+
+# Equation: y = 2x - 2
+slope = 2
+x_intercept = 2 / 2  # Setting y = 0 to find x
+y_intercept = -2  # Setting x = 0 to find y
+print("Slope:", slope)
+print("x-intercept:", x_intercept)
+print("y-intercept:", y_intercept)
+
+# Slope and distance between points (2, 2) and (6, 10)
+x1, y1 = 2, 2
+x2, y2 = 6, 10
+slope = (y2 - y1) / (x2 - x1)
+euclidean_distance = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+print("Slope:", slope)
+print("Euclidean Distance:", euclidean_distance)
+
+slope_task_8 = 2
+slope_task_9 = (10 - 2) / (6 - 2)
+comparison = slope_task_8 == slope_task_9
+print("Are the slopes equal?", comparison)
+
+# Script to calculate value of y
+x = -3  # Example value where y is 0
+y = x**2 + 6*x + 9
+print("For x =", x, ", y =", y)
+
+# Falsy comparison
+length_python = len('python')
+length_dragon = len('dragon')
+falsy_comparison = length_python != length_dragon
+print("Falsy comparison statement:", falsy_comparison)
+check = 'on' in 'python' and 'on' in 'dragon'
+print("Is 'on' in both 'python' and 'dragon'?", check)
+
+# checking if jargon is a sentence
+sentence = "I hope this course is not full of jargon."
+check_jargon = 'jargon' in sentence
+print("Is 'jargon' in the sentence?", check_jargon)
+
+# Checking if 'on' is Not in Both 'python' and 'dragon
+check_not_in = 'on' not in 'python' and 'on' not in 'dragon'
+print("There is no 'on' in both 'dragon' and 'python':", check_not_in)
+
+# Converting Length of 'python' to Float and then to String
+length_python = float(len('python'))
+length_python_str = str(length_python)
+print("Length of 'python' as float and then string:", length_python_str)
+
+# Checking if a Number is Even
+number = 4  # Example number
+is_even = number % 2 == 0
+print("Is the number even?", is_even)
+
+# Checking if Floor Division of 7 by 3 Equals 2.7
+floor_division_check = 7 // 3 == int(2.7)
+print("Is the floor division of 7 by 3 equal to int(2.7)?", floor_division_check)
+
+# Checking if Type of '10' is Equal to Type of 10
+type_check = type('10') == type(10)
+print("Is type of '10' equal to type of 10?", type_check)
+
+# Checking if int('9.8') Equals 10
+try:
+    check_int = int(float('9.8')) == 10  # Corrected to handle float conversion first
+except ValueError:
+    check_int = False
+print("Is int('9.8') equal to 10?", check_int)
+
+# Calculating Pay Based on Hours and Rate
+hours = float(input("Enter hours: "))
+rate_per_hour = float(input("Enter rate per hour: "))
+pay = hours * rate_per_hour
+print("Your weekly earning is", pay)
+
+# Calculating Number of Seconds in a Given Number of Years
+years = float(input("Enter number of years you have lived: "))
+seconds = years * 365 * 24 * 60 * 60
+print("You have lived for", seconds, "seconds.")
+
+# Displaying a table
+print("1 1 1 1 1")
+print("2 1 2 4 8")
+print("3 1 3 9 27")
+print("4 1 4 16 64")
+print("5 1 5 25 125")
+
+# EXERCISE MODULE 4 
+
+# Concatenate strings
+str1 = 'Thirty'
+str2 = 'Days'
+str3 = 'Of'
+str4 = 'Python'
+result = str1 + ' ' + str2 + ' ' + str3 + ' ' + str4
+print(result)  # Output: Thirty Days Of Python
+
+# Concatenate more strings
+str5 = 'Coding'
+str6 = 'For'
+str7 = 'All'
+result2 = str5 + ' ' + str6 + ' ' + str7
+print(result2)  # Output: Coding For All
+
+# Declare and assign variable
+company = "Coding For All"
+
+# Print the variable
+print(company)  # Output: Coding For All
+
+# Print the length of the company string
+print(len(company))  # Output: Length of the string
+
+# Change to uppercase
+print(company.upper())  # Output: CODING FOR ALL
+
+# Change to lowercase
+print(company.lower())  # Output: coding for all
+
+# Use capitalize(), title(), swapcase() methods
+print(company.capitalize())  # Output: Coding for all
+print(company.title())       # Output: Coding For All
+print(company.swapcase())    # Output: cODING fOR aLL
+
+# Slicing out the first word
+first_word = company.split()[0]
+print(first_word)  # Output: Coding
+
+# Checking if contains 'Coding'
+print(company.index('Coding'))  # Output: Index of 'Coding'
+print(company.find('Coding'))   # Output: Index of 'Coding'
+
+# Replacing 'Coding' with 'Python'
+new_company = company.replace('Coding', 'Python')
+print(new_company)  # Output: Python For All
+
+# Replacing 'Python for Everyone' with 'Python for All'
+phrase = "Python for Everyone"
+new_phrase = phrase.replace('Everyone', 'All')
+print(new_phrase)  # Output: Python for All
+# Spliting using space as the separator
+print(company.split())  # Output: ['Coding', 'For', 'All']
+
+# Spliting at the comma
+tech_companies = "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon"
+print(tech_companies.split(', '))  # Output: List of company names
+
+# Character at index 0
+print(company[0])  # Output: C
+
+# Last index of the string
+print(company[-1])  # Output: l
+
+# Character at index 10
+print(company[10])  # Output: ' ' (space)
+
+# Creating an acronym
+def create_acronym(phrase):
+    words = phrase.split()
+    acronym = ''.join([word[0].upper() for word in words])
+    return acronym
+
+print(create_acronym('Python For Everyone'))  # Output: PFE
+
+# Acronym for 'Coding For All'
+print(create_acronym('Coding For All'))  # Output: CFA
+
+# First occurrence of 'C'
+print(company.index('C'))  # Output: 0
+
+# First occurrence of 'F'
+print(company.index('F'))  # Output: 7
+
+# Last occurrence of 'l'
+company = "Coding For All People"
+print(company.rfind('l'))  # Output: 19
+
+# First occurrence of 'because'
+sentence = 'You cannot end a sentence with because because because is a conjunction'
+print(sentence.index('because'))  # Output: Position of first 'because'
+
+# Last occurrence of 'because'
+print(sentence.rindex('because'))  # Output: Position of last 'because'
+
+# Slicing out 'because because because'
+start = sentence.find('because')
+end = sentence.rindex('because') + len('because')
+sliced_phrase = sentence[start:end]
+print(sliced_phrase)  # Output: because because because
+
+# Does 'Coding For All' Start with 'Coding'?
+print(company.startswith('Coding'))  # Output: True
+
+# Does 'Coding For All' End with 'coding'?
+print(company.endswith('coding'))  # Output: False
+
+# Removing trailing spaces
+trimmed_company = '   Coding For All      '.strip()
+print(trimmed_company)  # Output: Coding For All
+
+# Checking isidentifier()
+print('30DaysOfPython'.isidentifier())  # Output: False
+print('thirty_days_of_python'.isidentifier())  # Output: True
+
+# Joining  list with hash and space
+libraries = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+joined_libraries = ' # '.join(libraries)
+print(joined_libraries)  # Output: Django # Flask # Bottle # Pyramid # Falcon
+
+# using the New line escape sequence
+print("I am enjoying this challenge.\nI just wonder what is next.")
+
+# using the Tab escape sequence
+print("Name\tAge\tCountry\tCity\nAsabeneh\t250\tFinland\tHelsinki")
+
+# String formatting for circle area
+radius = 10
+area = 3.14 * radius ** 2
+print(f"The area of a circle with radius {radius} is {int(area)} meters square.")
+
+# string formatting of Arithmetic operations
+a, b = 8, 6
+print(f"{a} + {b} = {a + b}")
+print(f"{a} - {b} = {a - b}")
+print(f"{a} * {b} = {a * b}")
+print(f"{a} / {b} = {a / b:.2f}")
+print(f"{a} % {b} = {a % b}")
+print(f"{a} // {b} = {a // b}")
+print(f"{a} ** {b} = {a ** b}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
