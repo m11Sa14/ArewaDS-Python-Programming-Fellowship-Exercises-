@@ -78,7 +78,7 @@ complex_number = # declaring a variable that stores a complex number
 base = float(input("Enter base: "))
 height = float(input("Enter height: "))
 area = 0.5 * base * height
-print("The area of the triangle is", area)
+print("Area of the triangle is", area)
 
 # Script to calculate perimeter of a triangle
 a = float(input("Enter side a: "))
